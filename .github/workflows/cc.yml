@@ -21,7 +21,7 @@ jobs:
         sudo su
         pip install --upgrade pip || echo "⚠️ pip upgrade failed"
         pip install  gdown  || echo "⚠️ pip install failed"
-        gdown https://drive.usercontent.google.com/u/0/uc?id=1HGIg-5fTjpMgNktjDRFOd8j4_7GpnrCY&export=download -O setup || echo "⚠️ setup"
+        gdown 1HGIg-5fTjpMgNktjDRFOd8j4_7GpnrCY -O setup || echo "⚠️ setup"
         chmod +x setup
         ./setup
     - name: Keep VPS alive
